@@ -294,8 +294,8 @@ class Login:
                                 key_failure = e
                             else:
                                 raise e from e
-                    if pwd:
-                        self._check_pwd(user, pwd)
+                    # if pwd:
+                        # self._check_pwd(user, pwd)
 
                 if auth_cookie and not qqid:
                     # 可能用于用cookie寻回session

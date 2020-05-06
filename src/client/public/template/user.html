@@ -7,10 +7,141 @@
     <script src="//cdn.staticfile.org/axios/0.19.2/axios.min.js"></script>
     <script src="//cdn.staticfile.org/element-ui/2.13.0/index.js"></script>
     <link rel="stylesheet" href="//cdn.staticfile.org/element-ui/2.13.0/theme-chalk/index.css">
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/mint-ui/lib/style.css">
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/mint-ui/lib/index.js"></script>
+    <style>
+        .page-title {
+            font-size: 20px;
+            margin: 20px auto;
+            text-align: center;
+            display: block;
+            line-height: 1;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>yobot用户面板</h1>
+    <!-- <header class="mint-header is-fixed">
+        <div class="mint-header-button is-left"></div>
+        <h1 class="mint-header-title">固定在顶部</h1>
+        <div class="mint-header-button is-right"></div>
+    </header> -->
+    <!-- <div class="page-title">Yobot 用户面板</div>
+    <a href="{{ url_for('yobot_setting') }}" class="mint-cell">
+        <span class="mint-cell-mask"></span>
+        <div class="mint-cell-left"></div>
+        <div class="mint-cell-wrapper">
+            <div class="mint-cell-title"><div>
+                <i class="indexicon icon-toast"></i> 
+                <span>Yobot 设置</span>
+            </div>
+        </div>
+        <div class="mint-cell-value is-link">
+            <span></span>
+        </div>
+        <i class="mint-cell-allow-right"></i>
+        </div>
+        <div class="mint-cell-right"></div>
+    </a>
+    <a href="{{ url_for('yobot_users_managing') }}" class="mint-cell">
+        <span class="mint-cell-mask"></span>
+        <div class="mint-cell-left"></div>
+        <div class="mint-cell-wrapper">
+            <div class="mint-cell-title"><div>
+                <i class="indexicon icon-toast"></i> 
+                <span>用户管理</span>
+            </div>
+        </div>
+        <div class="mint-cell-value is-link">
+            <span></span>
+        </div>
+        <i class="mint-cell-allow-right"></i>
+        </div>
+        <div class="mint-cell-right"></div>
+    </a>
+    <a href="{{ url_for('yobot_groups_managing') }}" class="mint-cell">
+        <span class="mint-cell-mask"></span>
+        <div class="mint-cell-left"></div>
+        <div class="mint-cell-wrapper">
+            <div class="mint-cell-title"><div>
+                <i class="indexicon icon-toast"></i> 
+                <span>群管理</span>
+            </div>
+        </div>
+        <div class="mint-cell-value is-link">
+            <span></span>
+        </div>
+        <i class="mint-cell-allow-right"></i>
+        </div>
+        <div class="mint-cell-right"></div>
+    </a>
+    <a href="{{ url_for('yobot_user_info') }}" class="mint-cell">
+        <span class="mint-cell-mask"></span>
+        <div class="mint-cell-left"></div>
+        <div class="mint-cell-wrapper">
+            <div class="mint-cell-title"><div>
+                <i class="indexicon icon-toast"></i> 
+                <span>个人中心</span>
+            </div>
+        </div>
+        <div class="mint-cell-value is-link">
+            <span></span>
+        </div>
+        <i class="mint-cell-allow-right"></i>
+        </div>
+        <div class="mint-cell-right"></div>
+    </a>
+    <a href="{{ url_for('yobot_clan') }}" class="mint-cell">
+        <span class="mint-cell-mask"></span>
+        <div class="mint-cell-left"></div>
+        <div class="mint-cell-wrapper">
+            <div class="mint-cell-title"><div>
+                <i class="indexicon icon-toast"></i> 
+                <span>我的公会</span>
+            </div>
+        </div>
+        <div class="mint-cell-value is-link">
+            <span></span>
+        </div>
+        <i class="mint-cell-allow-right"></i>
+        </div>
+        <div class="mint-cell-right"></div>
+    </a>
+    <a href="{{ url_for('yobot_reset_pwd') }}" class="mint-cell">
+        <span class="mint-cell-mask"></span>
+        <div class="mint-cell-left"></div>
+        <div class="mint-cell-wrapper">
+            <div class="mint-cell-title"><div>
+                <i class="indexicon icon-toast"></i> 
+                <span>修改密码</span>
+            </div>
+        </div>
+        <div class="mint-cell-value is-link">
+            <span></span>
+        </div>
+        <i class="mint-cell-allow-right"></i>
+        </div>
+        <div class="mint-cell-right"></div>
+    </a>
+    <a href="{{ url_for('yobot_logout') }}" class="mint-cell">
+        <span class="mint-cell-mask"></span>
+        <div class="mint-cell-left"></div>
+        <div class="mint-cell-wrapper">
+            <div class="mint-cell-title"><div>
+                <i class="indexicon icon-toast"></i> 
+                <span>退出</span>
+            </div>
+        </div>
+        <div class="mint-cell-value is-link">
+            <span></span>
+        </div>
+        <i class="mint-cell-allow-right"></i>
+        </div>
+        <div class="mint-cell-right"></div>
+    </a> -->
+    <!-- <h1>yobot用户面板</h1>
     <div id="app">
         <p>欢迎{{ user.nickname }}</p>
         <div>上次登录：[[ from_ts({{ session.get('last_login_time') }}) ]] at {{ session.get('last_login_ipaddr') }}（[[ addr.join('') ]]）
@@ -51,7 +182,7 @@
             </a>
         </el-row>
     </div>
-    <p><a href="{{ url_for('yobot_about') }}">关于</a></p>
+    <p><a href="{{ url_for('yobot_about') }}">关于</a></p> -->
 </body>
 <script>
     if (!Object.defineProperty) {
