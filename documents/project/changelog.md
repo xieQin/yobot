@@ -1,23 +1,27 @@
 # 更新日志
 
-## 3.5.6
+## 3.6.2
+
+- 按日计算的统计图表（[#99](https://github.com/yuudi/yobot/pull/99)）
+- 优化 Dockerfile（[#97](https://github.com/yuudi/yobot/pull/97)）
+- 挖矿计算（[#103](https://github.com/yuudi/yobot/pull/103)）
+
+## 3.6.1
+
+- 竞技场查询支持pcrdfans
+- 更多的统计图表（[#85](https://github.com/yuudi/yobot/pull/85)）
+- 统计：多维度分析（[#82](https://github.com/yuudi/yobot/pull/82)）
+
+## 3.6.0
+
+- 公会战数据多存档
+- 开放统计
+- 统计：出刀顺序表（[#75](https://github.com/yuudi/yobot/pull/75)）
+- 统计：出刀统计图（[#77](https://github.com/yuudi/yobot/pull/77)、[#79](https://github.com/yuudi/yobot/pull/79)）
+
+## 3.5
 
 - 重置密码功能[#35](https://github.com/yuudi/yobot/pull/35)
-- 群发私聊催刀（默认不开启）
-- 修复非公会成员仍可申请出刀、挂树[#37](https://github.com/yuudi/yobot/issues/37)
-- 修复出刀记录导出至excel[#51](https://github.com/yuudi/yobot/issues/51)
-- 修复越权设置他人身份[#55](https://github.com/yuudi/yobot/issues/55)
-- 修复某些情况下获取主人失败
-- 修复某些情况下自动重启失败
-
-## 3.5.5
-
-- 国服日程表
-- 删除用户
-
-## 3.5.1
-
-- 多端同时保存登录状态
 - 报刀留言功能
 
 ## 3.4
@@ -27,3 +31,11 @@
 ## 3.3
 
 - 公会战面板
+
+## 3.2
+
+- 可视化设置页面
+
+## 3.1
+
+- 定时推送

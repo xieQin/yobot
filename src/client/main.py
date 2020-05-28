@@ -15,14 +15,17 @@ loop=true
 while $loop
 do
     loop=false
-    python3 main.py -g
+    {} -g
     if [ -f .YOBOT_RESTART ]
     then
         loop=true
         rm .YOBOT_RESTART
     fi
 done
-""")
+""".format(
+    './yobot' if '_MEIPASS' in dir(sys) else 'python3 main.py'
+)
+)
         print('请通过"sh yobotg.sh"启动')
         sys.exit()
     if os.path.exists('.YOBOT_RESTART'):
@@ -101,8 +104,9 @@ def main():
             to_sends = func()
         if to_sends is None:
             return
-        tasks = [cqbot.send_msg(**kwargs) for kwargs in to_sends]
-        await asyncio.gather(*tasks)
+        for kwargs in to_sends:
+            await asyncio.sleep(5)
+            await cqbot.send_msg(**kwargs)
 
     jobs = bot.active_jobs()
     if jobs:
